@@ -90,6 +90,9 @@
     "egulias/email-validator": {
         "version": "2.1.17"
     },
+    "friendsofsymfony/user-bundle": {
+        "version": "v2.1.2"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -410,6 +413,9 @@
         "version": "v1.1.8"
     },
     "symfony/stopwatch": {
+        "version": "v4.4.5"
+    },
+    "symfony/templating": {
         "version": "v4.4.5"
     },
     "symfony/test-pack": {
