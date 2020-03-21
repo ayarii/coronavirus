@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aa631a9-8f79-4958-92f7-7ca39986cd3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Allergy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Sickness.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AllergyRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SicknessRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +168,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584434328362</updated>
       <workItem from="1584434331332" duration="2417000" />
-      <workItem from="1584608695890" duration="15908000" />
+      <workItem from="1584608695890" duration="18320000" />
+      <workItem from="1584783174401" duration="3217000" />
     </task>
     <servers />
   </component>
