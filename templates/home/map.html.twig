@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+<div class="map-container">
+    <div id="map"></div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Javascript method's body can be found in assets/js/demos.js
+            demo.initGoogleMaps();
+
+        });
+</script>
+{% endblock %}
