@@ -2,7 +2,6 @@
 
 namespace App\Repository;
 
-use App\Entity\Allergy;
 use App\Entity\Sickness;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
@@ -17,7 +16,7 @@ class SicknessRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Allergy::class);
+        parent::__construct($registry, Sickness::class);
     }
 
     // /**
@@ -48,4 +47,10 @@ class SicknessRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function getall()
+    {
+        return $this->createQueryBuilder('i')
+            ->getQuery()
+            ->getResult();
+    }
 }
