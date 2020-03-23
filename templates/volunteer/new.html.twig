@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Volunteer{% endblock %}
+
+{% block body %}
+    <h1>Create new Volunteer</h1>
+
+    {{ include('Volunteer/_form.html.twig') }}
+
+    <a href="{{ path('Volunteer_index') }}">back to list</a>
+{% endblock %}

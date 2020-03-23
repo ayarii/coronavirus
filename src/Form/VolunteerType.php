@@ -2,12 +2,12 @@
 
 namespace App\Form;
 
-use App\Entity\Voluntary;
+use App\Entity\Volunteer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class VoluntaryType extends AbstractType
+class VolunteerType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -24,7 +24,7 @@ class VoluntaryType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Voluntary::class,
+            'data_class' => Volunteer::class,
         ]);
     }
 }

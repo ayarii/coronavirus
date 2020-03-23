@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Volunteer index{% endblock %}
+
+{% block body %}
+    <h1>Volunteer index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Country</th>
+                <th>PhoneNumber</th>
+                <th>Picture</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for Volunteer in voluntaries %}
+            <tr>
+                <td>{{ Volunteer.id }}</td>
+                <td>{{ Volunteer.firstName }}</td>
+                <td>{{ Volunteer.lastName }}</td>
+                <td>{{ Volunteer.country }}</td>
+                <td>{{ Volunteer.phoneNumber }}</td>
+                <td>{{ Volunteer.picture }}</td>
+                <td>
+                    <a href="{{ path('Volunteer_show', {'id': Volunteer.id}) }}">show</a>
+                    <a href="{{ path('Volunteer_edit', {'id': Volunteer.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('Volunteer_new') }}">Create new</a>
+{% endblock %}

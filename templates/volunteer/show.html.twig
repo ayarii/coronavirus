@@ -1,42 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Voluntary{% endblock %}
+{% block title %}Volunteer{% endblock %}
 
 {% block body %}
-    <h1>Voluntary</h1>
+    <h1>Volunteer</h1>
 
     <table class="table">
         <tbody>
             <tr>
                 <th>Id</th>
-                <td>{{ voluntary.id }}</td>
+                <td>{{ Volunteer.id }}</td>
             </tr>
             <tr>
                 <th>FirstName</th>
-                <td>{{ voluntary.firstName }}</td>
+                <td>{{ Volunteer.firstName }}</td>
             </tr>
             <tr>
                 <th>LastName</th>
-                <td>{{ voluntary.lastName }}</td>
+                <td>{{ Volunteer.lastName }}</td>
             </tr>
             <tr>
                 <th>Country</th>
-                <td>{{ voluntary.country }}</td>
+                <td>{{ Volunteer.country }}</td>
             </tr>
             <tr>
                 <th>PhoneNumber</th>
-                <td>{{ voluntary.phoneNumber }}</td>
+                <td>{{ Volunteer.phoneNumber }}</td>
             </tr>
             <tr>
                 <th>Picture</th>
-                <td>{{ voluntary.picture }}</td>
+                <td>{{ Volunteer.picture }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('voluntary_index') }}">back to list</a>
+    <a href="{{ path('Volunteer_index') }}">back to list</a>
 
-    <a href="{{ path('voluntary_edit', {'id': voluntary.id}) }}">edit</a>
+    <a href="{{ path('Volunteer_edit', {'id': Volunteer.id}) }}">edit</a>
 
-    {{ include('voluntary/_delete_form.html.twig') }}
+    {{ include('Volunteer/_delete_form.html.twig') }}
 {% endblock %}
