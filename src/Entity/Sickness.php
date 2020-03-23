@@ -21,9 +21,31 @@ class Sickness
      */
     private $name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="Information")
+     * @ORM\JoinColumn(name="informations",referencedColumnName="id")
+     */
+    private $informations;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getInformations()
+    {
+        return $this->informations;
+    }
+
+    /**
+     * @param mixed $informations
+     */
+    public function setInformations($informations): void
+    {
+        $this->informations = $informations;
     }
 
     public function getName(): ?string

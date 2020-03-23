@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Information index{% endblock %}
+
+{% block body %}
+    <h1>Information index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Age</th>
+                <th>Cin</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for information in information %}
+            <tr>
+                <td>{{ information.id }}</td>
+                <td>{{ information.firstName }}</td>
+                <td>{{ information.lastName }}</td>
+                <td>{{ information.age }}</td>
+                <td>{{ information.cin }}</td>
+                <td>
+                    <a href="{{ path('information_show', {'id': information.id}) }}">show</a>
+                    <a href="{{ path('information_edit', {'id': information.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('information_new') }}">Create new</a>
+{% endblock %}
