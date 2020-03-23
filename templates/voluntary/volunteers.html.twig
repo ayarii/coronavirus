@@ -1,0 +1,37 @@
+{% extends 'baseFront.html.twig' %}
+{% block title %} volunteers {% endblock %}
+{% block body %}
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <div class="title-icon">
+                    <span class="icon"><img src="{{ asset('assets/Front/images/icons/separater.png') }}" alt=""/></span>
+                </div>
+                <h2>Coronavirus Specialist</h2>
+                <div class="text">Consequatur molestiae, eligendi molestias ratione voluptas aliquid praesentium,
+                    dolorem doloribus, deleniti <br>officia numquam optio sunt eveniet consequuntur laboriosam at non
+                    ullam provident
+                </div>
+            </div>
+            <div class="row clearfix">
+                <!--Team Block-->
+                {% for voluntary in volunteers %}
+                    <div class="team-block col-lg-4 col-md-6 col-sm-12">
+                        <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="image">
+                                <img src="{{ asset('uploads/pictures/' ~ voluntary.picture) }}"
+                                     alt="{{ voluntary.lastName }}">
+                            </div>
+                            <div class="lower-content">
+                                <h3>{{ voluntary.firstName }} {{ voluntary.lastName }}</h3>
+                                <div class="designation">{{ voluntary.specialty }}</div>
+                                <div class="designation">{{ voluntary.phoneNumber }}</div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+               <div class="pagination-lg">{{ knp_pagination_render(volunteers) }}</div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

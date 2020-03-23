@@ -42,8 +42,7 @@ class Voluntary
     private $picture;
 
     /**
-     *
-     * @ORM\OneToOne(targetEntity="Specialty")
+     * @ORM\ManyToOne(targetEntity="Specialty")
      * @ORM\JoinColumn(name="specialty_id", referencedColumnName="id")
      */
     private $specialty;
@@ -101,12 +100,12 @@ class Voluntary
         return $this;
     }
 
-    public function getPicture(): ?string
+    public function getPicture()
     {
         return $this->picture;
     }
 
-    public function setPicture(string $picture): self
+    public function setPicture( $picture): self
     {
         $this->picture = $picture;
 
@@ -128,6 +127,5 @@ class Voluntary
     {
         $this->specialty = $specialty;
     }
-
 
 }

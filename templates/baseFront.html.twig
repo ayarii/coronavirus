@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>COVID-TN - {% block title %} {% endblock %}</title>
+    <!-- Stylesheets -->
+    <link href="{{ asset('assets/Front/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/Front/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/Front/css/responsive.css') }}" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{{ asset('assets/Front/images/favicon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/Front/images/favicon.png') }}" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{{ asset('assets/Front/js/respond.js') }}"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Main Header-->
+    <header class="main-header">
+
+        <!--Header-Upper-->
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="clearfix">
+
+                    <div class="pull-left logo-box">
+                        <div class="logo"><a href="#"><img src="{{ asset('assets/Front/images/logo.png') }}" alt="" title="COVIDTN"></a></div>
+                    </div>
+
+                    <div class="nav-outer clearfix">
+
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md">
+                            <div class="navbar-header">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="#">Test The corona Virus</a></li>
+                                    <li><a href="{{path('volunteers')}}">Volunteers </a></li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+    </header>
+    <!--End Main Header -->
+
+    <!--Form Back Drop-->
+    <div class="form-back-drop"></div>
+
+
+
+    <!--Main Slider-->
+    <section class="main-slider">
+
+        <div class="main-slider-carousel owl-carousel owl-theme">
+
+            <div class="slide" style="background-image:url(images/main-slider/content-image-3.png)">
+                <div class="auto-container">
+                    <div class="clearfix">
+                        <div class="content">
+                            <h2>Basic protective <br>measures against the <br> new coronavirus</h2>
+                            <div class="text">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</div>
+                            <div class="link-box">
+                                <a href="#" class="theme-btn btn-style-two"><span class="txt">Pass The Corona Test</span></a>
+                            </div>
+                        </div>
+                        <div class="image-box">
+                            <div class="image">
+                                <img src="{{ asset('assets/Front/images/main-slider/content-image.png') }}" alt="" title="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image:url(images/main-slider/content-image-3.png)">
+                <div class="auto-container">
+                    <div class="clearfix">
+                        <div class="content">
+                            <h2>Prevention <br>of Coronavirus <br>Disease 2020</h2>
+                            <div class="text">Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.</div>
+                            <div class="link-box">
+                                <a href="#" class="theme-btn btn-style-two"><span class="txt">Pass The Corona Test</span></a>
+                            </div>
+                        </div>
+                        <div class="image-box">
+                            <div class="image">
+                                <img src="{{ asset('assets/Front/images/main-slider/content-image-2.png') }}" alt="" title="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>>
+
+    <!--End Main Slider-->
+{% block body %}
+
+  {% endblock %}
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <!--Widgets Section-->
+        <div class="auto-container">
+            <div class="logo">
+                <a href="#"><img src="{{ asset('assets/Front/images/logo.png') }}" alt="" /></a>
+            </div>
+            <div class="copyright">Copyrights 2020 All Rights Reserved.</div>
+
+        </div>
+    </footer>
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-right-arrow"></span></div>
+
+</div>
+<!--End pagewrapper-->
+
+<script src="{{ asset('assets/Front/js/jquery.js') }}"></script>
+<script src="{{ asset('assets/Front/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/Front/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/Front/js/jquery.fancybox.js') }}"></script>
+<script src="{{ asset('assets/Front/js/appear.js') }}"></script>
+<script src="{{ asset('assets/Front/js/owl.js') }}"></script>
+<script src="{{ asset('assets/Front/js/wow.js') }}"></script>
+<script src="{{ asset('assets/Front/js/jquery-ui.js') }}"></script>
+<script src="{{ asset('assets/Front/js/script.js') }}"></script>
+
+</body>
+
+</html>
