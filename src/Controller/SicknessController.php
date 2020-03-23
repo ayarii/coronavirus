@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/sickness")
+ * @Route("/admin/sickness")
  */
 class SicknessController extends AbstractController
 {
@@ -21,7 +21,7 @@ class SicknessController extends AbstractController
     {
         $sicknesses = $this->getDoctrine()
             ->getRepository(Sickness::class)
-            ->findAll();
+            ->getall();
 
         return $this->render('sickness/index.html.twig', [
             'sicknesses' => $sicknesses,
@@ -36,12 +36,10 @@ class SicknessController extends AbstractController
         $sickness = new Sickness();
         $form = $this->createForm(SicknessType::class, $sickness);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($sickness);
             $entityManager->flush();
-
             return $this->redirectToRoute('sickness_index');
         }
 
@@ -91,7 +89,6 @@ class SicknessController extends AbstractController
             $entityManager->remove($sickness);
             $entityManager->flush();
         }
-
         return $this->redirectToRoute('sickness_index');
     }
 }
