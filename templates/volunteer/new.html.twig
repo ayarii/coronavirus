@@ -4,8 +4,13 @@
 
 {% block body %}
     <h1>Create new Volunteer</h1>
+    <div class="container-fluid">
+        <a href="{{ path('Volunteer_All')}}" class="btn btn-outline-dark dataTableLink btn-lg">Back to list</a>
+    </div>
 
-    {{ include('Volunteer/_form.html.twig') }}
+    <div class="container">
+        {{ include('Volunteer/_form.html.twig') }}
+    </div>
 
-    <a href="{{ path('Volunteer_index') }}">back to list</a>
+    
 {% endblock %}

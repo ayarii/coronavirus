@@ -9,12 +9,48 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Omines\DataTablesBundle\Column\TextColumn;
+use Omines\DataTablesBundle\DataTableFactory;
+use Omines\DataTablesBundle\Adapter\Doctrine\ORMAdapter;
 
 /**
  * @Route("/admin/Volunteer")
  */
 class VolunteerController extends AbstractController
 {
+
+     /**
+     * @Route("/", name="Volunteer_All")
+     */
+    public function showVolunteers(Request $request, DataTableFactory $dataTableFactory): Response
+    {
+        $table = $dataTableFactory->create()
+                    ->add('firstName', TextColumn::class, ['label' => 'First Name', 'searchable' => true, 'className' => 'bold'])
+                    ->add('lastName', TextColumn::class, ['label' => 'LastName', 'searchable' => true, 'className' => 'bold'])
+                    ->add('country', TextColumn::class, ['label' => 'Country', 'searchable' => true, 'className' => 'bold'])
+                    ->add('phoneNumber', TextColumn::class, ['label' => 'PhoneNumber', 'searchable' => true, 'className' => 'bold'])
+                    ->add('picture', TextColumn::class, ['label' => 'Picture', 'searchable' => true, 'className' => 'bold'])
+                    ->add('specialty', TextColumn::class, ['label' => 'Specialty', 'searchable' => true, 'field' => 'specialty.name', 'className' => 'bold'])
+                    ->add('id', TextColumn::class, ['label' => 'Actions', 'orderable' => false, 'searchable' => false,
+                        'render' => function($id, $context) {
+                        return sprintf('<a href="%s"class="btn btn-outline-dark dataTableLink">Modifiy</a><a href="%s"class="btn btn-outline-dark dataTableLink">Delete</a>',
+                                $this->generateUrl('Volunteer_edit', ['id' => $id]), $this->generateUrl('Volunteer_delete', ['id' => $id])
+                            );
+                        }])
+                    ->createAdapter(ORMAdapter::class, [
+                        'entity' => Volunteer::class,
+                    ])
+                    ->handleRequest($request);
+
+        if ($table->isCallback()) {
+            return $table->getResponse();
+        }
+
+        return $this->render('Volunteer/index1.html.twig', [
+            'datatable' => $table,
+        ]);
+    }
+
     /**
      * @Route("/", name="Volunteer_index", methods={"GET"})
      */
@@ -36,7 +72,7 @@ class VolunteerController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
-            $file = $Volunteer->getPicture();
+            $file = $Volunteer->getPicture(); 
             // $fileName = $this->generateUniqueFileName().'.'.$file->guessExtension();
             $fileName = md5(uniqid()).'.'.$file->guessExtension();
             // moves the file to the directory where brochures are stored
@@ -44,7 +80,7 @@ class VolunteerController extends AbstractController
             $Volunteer->setPicture($fileName);
             $entityManager->persist($Volunteer);
             $entityManager->flush();
-            return $this->redirectToRoute('Volunteer_index');
+            return $this->redirectToRoute('Volunteer_All');
         }
 
         return $this->render('Volunteer/new.html.twig', [
@@ -80,7 +116,7 @@ class VolunteerController extends AbstractController
             $Volunteer->setPicture($fileName);
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('Volunteer_index');
+            return $this->redirectToRoute('Volunteer_All');
         }
 
         return $this->render('Volunteer/edit.html.twig', [
@@ -100,7 +136,7 @@ class VolunteerController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('Volunteer_index');
+        return $this->redirectToRoute('Volunteer_All');
     }
 
     /**
