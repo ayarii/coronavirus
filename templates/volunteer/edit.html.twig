@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Volunteer{% endblock %}
+
+{% block body %}
+    <h1>Edit Volunteer</h1>
+    <div class="container-fluid">
+        <a href="{{ path('Volunteer_All')}}" class="btn btn-outline-dark dataTableLink btn-lg">Back to list</a>
+    </div>
+
+    <div class="container">
+        {{ include('Volunteer/_form.html.twig', {'button_label': 'Update'}) }}
+    </div>
+    
+
+{% endblock %}

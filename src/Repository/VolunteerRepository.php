@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Voluntary;
+use App\Entity\Volunteer;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
- * @method Voluntary|null find($id, $lockMode = null, $lockVersion = null)
- * @method Voluntary|null findOneBy(array $criteria, array $orderBy = null)
- * @method Voluntary[]    findAll()
- * @method Voluntary[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Volunteer|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Volunteer|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Volunteer[]    findAll()
+ * @method Volunteer[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class VoluntaryRepository extends ServiceEntityRepository
+class VolunteerRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Voluntary::class);
+        parent::__construct($registry, Volunteer::class);
     }
 
     // /**
-    //  * @return Voluntary[] Returns an array of Voluntary objects
+    //  * @return Volunteer[] Returns an array of Volunteer objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class VoluntaryRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Voluntary
+    public function findOneBySomeField($value): ?Volunteer
     {
         return $this->createQueryBuilder('v')
             ->andWhere('v.exampleField = :val')

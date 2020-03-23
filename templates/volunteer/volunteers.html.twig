@@ -15,17 +15,17 @@
             </div>
             <div class="row clearfix">
                 <!--Team Block-->
-                {% for voluntary in volunteers %}
+                {% for Volunteer in volunteers %}
                     <div class="team-block col-lg-4 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="{{ asset('uploads/pictures/' ~ voluntary.picture) }}"
-                                     alt="{{ voluntary.lastName }}">
+                                <img src="{{ asset('uploads/pictures/' ~ Volunteer.picture) }}"
+                                     alt="{{ Volunteer.lastName }}">
                             </div>
                             <div class="lower-content">
-                                <h3>{{ voluntary.firstName }} {{ voluntary.lastName }}</h3>
-                                <div class="designation">{{ voluntary.specialty }}</div>
-                                <div class="designation">{{ voluntary.phoneNumber }}</div>
+                                <h3>{{ Volunteer.firstName }} {{ Volunteer.lastName }}</h3>
+                                <div class="designation">{{ Volunteer.specialty }}</div>
+                                <div class="designation">{{ Volunteer.phoneNumber }}</div>
                             </div>
                         </div>
                     </div>

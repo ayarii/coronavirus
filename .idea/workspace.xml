@@ -209,12 +209,12 @@
       <change beforePath="$PROJECT_DIR$/public/assets/sass/lbd/plugins/_datetime-picker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/sass/lbd/plugins/_datetime-picker.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/sass/light-bootstrap-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/sass/light-bootstrap-dashboard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VoluntaryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VoluntaryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Voluntary.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Voluntary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VolunteerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VolunteerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Volunteer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Volunteer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/voluntary/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/voluntary/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Volunteer/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Volunteer/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

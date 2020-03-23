@@ -2,8 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Voluntary;
-use App\Repository\VoluntaryRepository;
+use App\Entity\Volunteer;
+use App\Repository\VolunteerRepository;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -47,13 +47,13 @@ class HomeController extends AbstractController
      */
     public function volunteers(Request $request, PaginatorInterface $paginator)
     {
-        $voluntaryRepository = $this->getDoctrine()->getRepository(Voluntary::class)->findAll();
+        $VolunteerRepository = $this->getDoctrine()->getRepository(Volunteer::class)->findAll();
         $entites = $paginator->paginate(
-            $voluntaryRepository, // Requête contenant les données à paginer (ici nos articles)
+            $VolunteerRepository, // Requête contenant les données à paginer (ici nos articles)
             $request->query->getInt('page', 1), // Numéro de la page en cours, passé dans l'URL, 1 si aucune page
             2 // Nombre de résultats par page
         );
-        return $this->render('voluntary/volunteers.html.twig', [
+        return $this->render('Volunteer/volunteers.html.twig', [
             'volunteers' => $entites,
         ]);
     }

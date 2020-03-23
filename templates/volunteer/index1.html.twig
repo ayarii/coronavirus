@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Volunteer index{% endblock %}
+
+{% block body %}
+    <h1>Volunteer index</h1>
+
+    <!-- Insert this where you want the table to appear -->
+    <div id="Volunteers" class="content table-responsive table-full-width">Loading...</div>
+
+
+    <a href="{{ path('Volunteer_new') }}" class="btn btn-outline-dark dataTableLink">Add new volunteer</a>
+
+    
+{% endblock %}
+
+{% block javascripts %}
+    <!-- Insert this at the end of your body element, but before the closing tag -->
+    <script src="{{ asset('bundles/datatables/js/datatables.js') }}"></script>
+    <script>
+        $(function() {
+            $('#Volunteers').initDataTables( {{ datatable_settings(datatable) }} , {
+            searching: true,
+            dom:'<"html5buttons"B>lTfgitp'
+        }).then(function(dt) {
+            // dt contains the initialized instance of DataTables
+            dt.on('draw')
+        } )
+        });
+    </script>
+{% endblock %}

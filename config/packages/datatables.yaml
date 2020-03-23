@@ -1,0 +1,14 @@
+# Latest documentation available at https://omines.github.io/datatables-bundle/#configuration
+datatables:
+    # Set options, as documented at https://datatables.net/reference/option/
+    options:
+        lengthMenu : [10, 25, 50, 100]
+        pageLength: 10
+        dom: "<'row' <'col-sm-12' ftr>><'row' <'col-sm-6'l><'col-sm-6 text-center'pi>>" 
+
+    template_parameters:
+        # Example classes to integrate nicely with Bootstrap 3.x
+        className: 'table table-hover'
+
+    # You can for example override this to "tables" to keep the translation domains separated nicely
+    translation_domain: 'messages'
