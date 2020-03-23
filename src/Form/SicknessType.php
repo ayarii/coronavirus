@@ -2,8 +2,11 @@
 
 namespace App\Form;
 
+use App\Entity\Information;
 use App\Entity\Sickness;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -13,6 +16,13 @@ class SicknessType extends AbstractType
     {
         $builder
             ->add('name')
+            ->add('informations', EntityType::class, [
+                'class' => Information::class,
+                'choice_label'=>'id',
+                'multiple' => false,
+                'expanded' => false
+            ])
+
         ;
     }
 
