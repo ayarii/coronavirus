@@ -43,7 +43,7 @@ class Volunteer
 
     /**
      * @ORM\ManyToOne(targetEntity="Specialty")
-     * @ORM\JoinColumn(name="specialty_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="specialty_id", referencedColumnName="id",onDelete="CASCADE")
      */
     private $specialty;
 

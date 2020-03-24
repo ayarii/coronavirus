@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce0f3-2656-4914-846d-f233f2f8321c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/coronavirus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coronavirus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Information.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Information.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SpecialtyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SpecialtyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VolunteerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VolunteerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Volunteer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Volunteer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/VolunteerType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/VolunteerType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/_form.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +146,8 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/omines/datatables-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZFURUokB580ux5I8iSBjBMhj9f" />
@@ -138,18 +155,19 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/Front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/Back/img" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\coronavirus\public\assets\Back" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\coronavirus\public\assets\Back\img" />
       <recent name="C:\wamp\www\coronavirus\public\assets\Front" />
       <recent name="C:\wamp\www\coronavirus\src\Repository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\coronavirus\public\assets\Back" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -169,7 +187,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5aa631a9-8f79-4958-92f7-7ca39986cd3f" name="Default Changelist" comment="" />
+      <changelist id="d92ce0f3-2656-4914-846d-f233f2f8321c" name="Default Changelist" comment="" />
       <created>1584434328362</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -178,6 +196,7 @@
       <workItem from="1584608695890" duration="18320000" />
       <workItem from="1584783174401" duration="12399000" />
       <workItem from="1584913014724" duration="3821000" />
+      <workItem from="1585036459829" duration="9942000" />
     </task>
     <servers />
   </component>

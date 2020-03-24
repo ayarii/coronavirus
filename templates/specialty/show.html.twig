@@ -3,8 +3,9 @@
 {% block title %}Specialty{% endblock %}
 
 {% block body %}
-    <h1>Specialty</h1>
-
+<div class="card">
+    <div class="header">
+        <h4 class="title">Specialty</h4>
     <table class="table">
         <tbody>
             <tr>
@@ -22,9 +23,13 @@
         </tbody>
     </table>
 
-    <a href="{{ path('specialty_index') }}">back to list</a>
+    <div class=" footer container-fluid">
+        <a href="{{ path('specialty_index')}}" class="btn btn-outline-dark dataTableLink btn-sm">Back to list</a>
 
-    <a href="{{ path('specialty_edit', {'id': specialty.id}) }}">edit</a>
+       <a href="{{ path('specialty_edit', {'id': specialty.id}) }}" class="btn btn-outline-dark dataTableLink btn-sm">Edit</a>
 
-    {{ include('specialty/_delete_form.html.twig') }}
+       {{ include('specialty/_delete_form.html.twig') }}
+       </div>
+    </div>
+</div>
 {% endblock %}

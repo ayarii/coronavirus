@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/specialty")
+ * @Route("/admin/specialty")
  */
 class SpecialtyController extends AbstractController
 {
@@ -79,16 +79,13 @@ class SpecialtyController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="specialty_delete", methods={"DELETE"})
+     * @Route("/{id}", name="specialty_delete")
      */
-    public function delete(Request $request, Specialty $specialty): Response
+    public function delete(Specialty $specialty)
     {
-        if ($this->isCsrfTokenValid('delete'.$specialty->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($specialty);
             $entityManager->flush();
-        }
-
         return $this->redirectToRoute('specialty_index');
     }
 }

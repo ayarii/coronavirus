@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Volunteer;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,7 +17,8 @@ class VolunteerType extends AbstractType
             ->add('lastName')
             ->add('country')
             ->add('phoneNumber')
-            ->add('picture')
+            ->add('picture', FileType::class, [
+                'label' => 'Add a picture'])
             ->add('specialty')
         ;
     }

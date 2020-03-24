@@ -1,4 +1,11 @@
+
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_row(form.name, { 'attr' : {'placeholder' : 'Specialty name', 'class' : 'form-control'}}) }}
+    {{ form_row(form.description, { 'attr' : {'placeholder' : 'Specialty description', 'class' : 'form-control'}}) }}
+
+
+<div class="footer container-fluid">
+    <button type="submit" class="btn btn-outline-dark dataTableLink btn-sm"> {{ button_label|default('Save') }} </button>
+    <a href="{{ path('specialty_index')}}" class="btn btn-outline-dark dataTableLink btn-sm">Back to list</a>
+</div>
 {{ form_end(form) }}

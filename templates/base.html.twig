@@ -8,7 +8,7 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
 
         <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/Back/img/apple-icon.png') }}">
-        <link rel="icon" type="image/png" href="{{ asset('assets/Back/img/favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/Back/img/favicon.png') }}">
             <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
@@ -26,16 +26,12 @@
     <body>
 
         <div class="wrapper">
-            <div class="sidebar" data-image="{{ asset('assets/Back/img/sidebar-4.jpg') }}" data-color="purple">
-                <!--
-            Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-    
-            Tip 2: you can also add an image using data-image tag
-        -->
+            <div class="sidebar" data-image="{{ asset('assets/Front/images/resource/news-10.jpg') }}" data-color="purple">
+
                 <div class="sidebar-wrapper">
                     <div class="logo">
                         <a href="{{ path('home') }}" class="simple-text">
-                          Teckorona
+                          CODIV-TN
                         </a>
                     </div>
                     <ul class="nav">
@@ -48,13 +44,19 @@
                         <li>
                             <a class="nav-link" href="#">
                                 <i class="nc-icon nc-circle-09"></i>
-                                <p>User Profile</p>
+                                <p>Test</p>
                             </a>
                         </li>
                         <li>
                             <a class="nav-link" href="{{ path('Volunteer_All') }}">
                                 <i class="nc-icon nc-notes"></i>
                                 <p>Volenteers</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="{{ path('specialty_index') }}">
+                                <i class="nc-icon nc-notes"></i>
+                                <p>Specialty</p>
                             </a>
                         </li>
                         <li>

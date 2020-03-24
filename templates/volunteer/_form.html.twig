@@ -3,9 +3,8 @@
     {{ form_row(form.lastName, { 'attr' : {'placeholder' : 'Volunteer lastName', 'class' : 'form-control'}}) }}
     {{ form_row(form.country, { 'attr' : {'placeholder' : 'Volunteer country', 'class' : 'form-control'}}) }}
     {{ form_row(form.phoneNumber, { 'attr' : {'placeholder' : 'Volunteer phoneNumber', 'class' : 'form-control'}}) }}
-    {{ form_row(form.picture, { 'attr' : {'placeholder' : 'Volunteer picture', 'class' : 'form-control'}}) }}
+    {{ form_row(form.picture) }}
     {{ form_row(form.specialty, { 'attr' : {'placeholder' : 'Volunteer specialty', 'class' : 'form-control'}}) }}
-    {# {{ form_widget(form) }} #}
     <br>
     <button type="submit" class="btn btn-outline-dark dataTableLink btn-lg"> {{ button_label|default('Save') }} </button>
 {{ form_end(form) }}
