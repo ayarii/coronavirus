@@ -52,7 +52,7 @@ class VolunteerController extends AbstractController
     }
 
     /**
-     * @Route("/", name="Volunteer_index", methods={"GET"})
+     * @Route("/list", name="Volunteer_index", methods={"GET"})
      */
     public function index(VolunteerRepository $VolunteerRepository): Response
     {

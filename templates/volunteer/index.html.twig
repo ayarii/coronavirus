@@ -3,41 +3,48 @@
 {% block title %}Volunteer index{% endblock %}
 
 {% block body %}
-    <h1>Volunteer index</h1>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th>Country</th>
-                <th>PhoneNumber</th>
-                <th>Picture</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for Volunteer in voluntaries %}
-            <tr>
-                <td>{{ Volunteer.id }}</td>
-                <td>{{ Volunteer.firstName }}</td>
-                <td>{{ Volunteer.lastName }}</td>
-                <td>{{ Volunteer.country }}</td>
-                <td>{{ Volunteer.phoneNumber }}</td>
-                <td>{{ Volunteer.picture }}</td>
-                <td>
-                    <a href="{{ path('Volunteer_show', {'id': Volunteer.id}) }}">show</a>
-                    <a href="{{ path('Volunteer_edit', {'id': Volunteer.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('Volunteer_new') }}">Create new</a>
+    <div class="card bootstrap-table">
+        <div class="header">
+            <h4 class="title">Volunter index</h4>
+            <table id="bootstrap-table" class="table">
+                <thead>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="name" data-sortable="true">Picture</th>
+                <th data-field="name" data-sortable="true">FirstName</th>
+                <th data-field="name" data-sortable="true">LastName</th>
+                <th data-field="actions" class="td-actions text-right" data-events="operateEvents"
+                    data-formatter="operateFormatter">Actions
+                </th>
+                </thead>
+                <tbody>
+                {% for Volunteer in voluntaries %}
+                    <tr>
+                        <td></td>
+                        <td><img class="image" src="{{ asset('uploads/pictures/' ~ Volunteer.picture) }}"
+                        alt="{{ Volunteer.lastName }}"></td>
+                        <td>{{ Volunteer.firstName }}</td>
+                        <td>{{ Volunteer.lastName }}</td>
+                        <td class="">
+                            <a href="{{ path('Volunteer_show', {'id': Volunteer.id}) }}"
+                               class="btn btn-outline-dark dataTableLink btn-sm">show</a>
+                            <a href="{{ path('Volunteer_edit', {'id': Volunteer.id}) }}"
+                               class="btn btn-outline-dark dataTableLink btn-sm">Edit</a>
+                            <a href="{{ path('Volunteer_delete', {'id': Volunteer.id}) }}"
+                               class="btn btn-outline-dark dataTableLink btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="4">no records found</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div class="footer container-fluid">
+                <a href="{{ path('Volunteer_new') }}" class="btn btn-outline-dark dataTableLink btn-sm">Create new
+                    sickness</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

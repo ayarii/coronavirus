@@ -2,28 +2,29 @@
 
 {% block title %}Allergy index{% endblock %}
 {% block body %}
-    <div class="card">
+    <div class="card bootstrap-table">
         <div class="header">
             <h4 class="title">Allergy index</h4>
-            <table class="table">
+            <table id="bootstrap-table" class="table">
                 <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>actions</th>
-                </tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="name" data-sortable="true">Name</th>
+                <th data-field="actions" class="td-actions text-right" data-events="operateEvents"
+                    data-formatter="operateFormatter">Actions
+                </th>
                 </thead>
                 <tbody>
                 {% for allergy in allergies %}
                     <tr>
-                        <td>{{ allergy.id }}</td>
+                        <td></td>
                         <td>{{ allergy.name }}</td>
-                        <td>
+                        <td class="text-right">
                             <a href="{{ path('allergy_show', {'id': allergy.id}) }}"
                                class="btn btn-outline-dark dataTableLink btn-sm">show</a>
                             <a href="{{ path('allergy_edit', {'id': allergy.id}) }}"
-                               class="btn btn-outline-dark dataTableLink btn-sm">edit</a>
+                               class="btn btn-outline-dark dataTableLink btn-sm">Edit</a>
                             <a href="{{ path('allergy_delete', {'id': allergy.id}) }}"
-                               class="btn btn-outline-dark dataTableLink btn-sm">delete</a>
+                               class="btn btn-outline-dark dataTableLink btn-sm">Delete</a>
                         </td>
                     </tr>
                 {% else %}
@@ -35,7 +36,7 @@
             </table>
             <div class="footer container-fluid">
                 <a href="{{ path('allergy_new') }}" class="btn btn-outline-dark dataTableLink btn-sm">Create new
-                    sickness</a>
+                    specialty</a>
             </div>
         </div>
     </div>

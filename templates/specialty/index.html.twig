@@ -3,32 +3,29 @@
 {% block title %}Specialty index{% endblock %}
 
 {% block body %}
-    <div class="card">
-
+    <div class="card bootstrap-table">
         <div class="header">
             <h4 class="title">Specialty index</h4>
-            <table class="table">
+            <table id="bootstrap-table" class="table">
                 <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>actions</th>
-                </tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="name" data-sortable="true">Name</th>
+                <th data-field="actions" class="td-actions text-right" data-events="operateEvents"
+                    data-formatter="operateFormatter">Actions
+                </th>
                 </thead>
                 <tbody>
                 {% for specialty in specialties %}
                     <tr>
-                        <td>{{ specialty.id }}</td>
+                        <td></td>
                         <td>{{ specialty.name }}</td>
-                        <td>{{ specialty.description }}</td>
-                        <td>
+                        <td class="">
                             <a href="{{ path('specialty_show', {'id': specialty.id}) }}"
                                class="btn btn-outline-dark dataTableLink btn-sm">show</a>
                             <a href="{{ path('specialty_edit', {'id': specialty.id}) }}"
-                               class="btn btn-outline-dark dataTableLink btn-sm">edit</a>
+                               class="btn btn-outline-dark dataTableLink btn-sm">Edit</a>
                             <a href="{{ path('specialty_delete', {'id': specialty.id}) }}"
-                               class="btn btn-outline-dark dataTableLink btn-sm">delete</a>
+                               class="btn btn-outline-dark dataTableLink btn-sm">Delete</a>
                         </td>
                     </tr>
                 {% else %}

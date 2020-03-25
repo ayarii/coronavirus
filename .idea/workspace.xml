@@ -3,12 +3,97 @@
   <component name="ChangeListManager">
     <list default="true" id="d92ce0f3-2656-4914-846d-f233f2f8321c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allergy/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allergy/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allergy/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/light-bootstrap-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/default-avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/tim_vector.jpe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/full-screen-image-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/loading-bubbles.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/sidebar-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/sidebar-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/sidebar-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/sidebar-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/sidebar-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/tim_80x80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/core/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/core/jquery.3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/core/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/light-bootstrap-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_bootstrap-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_checkbox-radio-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_footers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_partial-nucleo-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_sidebar-and-main-panel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_morphing-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_transparency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/plugins/_animate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/plugins/_datetime-picker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/light-bootstrap-dashboard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Front/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Front/js/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VolunteerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VolunteerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/allergy/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allergy/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allergy/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dashboard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/map.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/map.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/index1.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/index1.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,19 +244,22 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/Back/img" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\coronavirus\templates" />
+      <recent name="C:\wamp\www\coronavirus\public\assets\Back" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\coronavirus\public\assets\Back\img" />
+      <recent name="C:\wamp\www\coronavirus\public\assets\Back" />
+      <recent name="C:\wamp\www\coronavirus\src\Controller" />
       <recent name="C:\wamp\www\coronavirus\public\assets\Front" />
       <recent name="C:\wamp\www\coronavirus\src\Repository" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\coronavirus\public\assets\Back" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -201,7 +289,7 @@
       <workItem from="1584783174401" duration="12399000" />
       <workItem from="1584913014724" duration="3821000" />
       <workItem from="1585036459829" duration="10113000" />
-      <workItem from="1585126025042" duration="10831000" />
+      <workItem from="1585126025042" duration="24346000" />
     </task>
     <servers />
   </component>

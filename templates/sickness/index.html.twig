@@ -3,28 +3,29 @@
 {% block title %}Sickness index{% endblock %}
 
 {% block body %}
-    <div class="card">
+    <div class="card bootstrap-table">
         <div class="header">
             <h4 class="title">Sickness index</h4>
-            <table class="table">
+            <table id="bootstrap-table" class="table">
                 <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>actions</th>
-                </tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="name" data-sortable="true">Name</th>
+                <th data-field="actions" class="td-actions text-right" data-events="operateEvents"
+                data-formatter="operateFormatter">Actions
+                </th>
                 </thead>
                 <tbody>
                 {% for sickness in sicknesses %}
                     <tr>
-                        <td>{{ sickness.id }}</td>
+                        <td></td>
                         <td>{{ sickness.name }}</td>
-                        <td>
+                        <td class="">
                             <a href="{{ path('sickness_show', {'id': sickness.id}) }}"
                                class="btn btn-outline-dark dataTableLink btn-sm">show</a>
                             <a href="{{ path('sickness_edit', {'id': sickness.id}) }}"
-                               class="btn btn-outline-dark dataTableLink btn-sm">edit</a>
+                               class="btn btn-outline-dark dataTableLink btn-sm">Edit</a>
                             <a href="{{ path('sickness_delete', {'id': sickness.id}) }}"
-                               class="btn btn-outline-dark dataTableLink btn-sm">delete</a>
+                               class="btn btn-outline-dark dataTableLink btn-sm">Delete</a>
                         </td>
                     </tr>
                 {% else %}
@@ -36,7 +37,7 @@
             </table>
             <div class="footer container-fluid">
                 <a href="{{ path('sickness_new') }}" class="btn btn-outline-dark dataTableLink btn-sm">Create new
-                    sickness</a>
+                 sickness</a>
             </div>
         </div>
     </div>
