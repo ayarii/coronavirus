@@ -2,12 +2,13 @@
 
 {% block title %}Edit Sickness{% endblock %}
 
-{% block body %}
-    <h1>Edit Sickness</h1>
-
-    {{ include('sickness/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('sickness_index') }}">back to list</a>
-
-    {{ include('sickness/_delete_form.html.twig') }}
-{% endblock %}
+    {% block body %}
+        <div class="card">
+            <div class="header">
+                <h4 class="title">Edit Sickness</h4>
+                <div class="container-fluid">
+                    {{ include('sickness/_form.html.twig', {'button_label': 'Update'}) }}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
