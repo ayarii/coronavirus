@@ -3,7 +3,7 @@
 {% block title %}New Sickness{% endblock %}
 
 {% block body %}
-    <h1>Create new Sickness</h1>
+
 
     <div class="container-fluid">
         <a href="{{ path('sickness_index')}}" class="btn btn-outline-dark dataTableLink btn-lg">Back to list</a>
@@ -11,6 +11,7 @@
 
     <div class="container">
         {{ include('sickness/_form.html.twig') }}
+
     </div>
 {% endblock %}
 

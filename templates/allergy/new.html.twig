@@ -3,9 +3,12 @@
 {% block title %}New Allergy{% endblock %}
 
 {% block body %}
-    <h1>Create new Allergy</h1>
-
-    {{ include('allergy/_form.html.twig') }}
-
-    <a href="{{ path('allergy_index') }}">back to list</a>
+    <div class="card">
+        <div class="header">
+            <h4 class="title">Create new Allergy</h4>
+            <div class="content">
+                {{ include('allergy/_form.html.twig') }}
+            </div>
+        </div>
+    </div>
 {% endblock %}

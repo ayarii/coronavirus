@@ -2,19 +2,127 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce0f3-2656-4914-846d-f233f2f8321c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/blog-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/favicon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/flags/AU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/flags/BR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/flags/DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/flags/GB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/flags/RO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/flags/US.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/img/full-screen-image-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-selectpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/jquery-jvectormap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/jquery.bootstrap-wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/jquery.sharrre.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/nouislider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/sweetalert2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/dashboard.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200323223808.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/light-bootstrap-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/css/light-bootstrap-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/fonts/nucleo-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/default-avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/img/default-avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/face-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/faces/tim_vector.jpe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/full-screen-image-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/img/full-screen-image-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/loading-bubbles.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/sidebar-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/img/tim_80x80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/js/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/light-bootstrap-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/js/light-bootstrap-dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/chartist.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Back/js/plugins/chartist.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/js/plugins/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_bootstrap-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_checkbox-radio-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_footers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_partial-nucleo-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_sidebar-and-main-panel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_chartist.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_morphing-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_navbars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_transparency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/plugins/_animate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/lbd/plugins/_datetime-picker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Back/sass/light-bootstrap-dashboard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Front/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Front/js/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VolunteerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VolunteerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Sickness.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sickness.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SicknessType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SicknessType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allergy/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allergy/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allergy/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allergy/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allergy/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allergy/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/dashboard.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/map.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/map.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sickness/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/index1.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/index1.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sickness/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/specialty/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/volunteer/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,17 +138,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+            <state relative-caret-position="225">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+              <folding>
+                <element signature="n#div#1;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#7718#7724#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/baseFront.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="250">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="44" />
+              <folding>
+                <element signature="e#34#99#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -55,6 +188,9 @@
       <find>log ou</find>
       <find>Log ou</find>
       <find>Log out</find>
+      <find>HEAD</find>
+      <find>=======</find>
+      <find>Onentre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,11 +210,11 @@
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/EventSubscriber/RegistrationNotifySubscriber.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/RegistrationController.php" />
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/templates/register.html.twig" />
+        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
       </list>
     </option>
@@ -243,6 +379,12 @@
             <path>
               <item name="coronavirus" type="b2602c69:ProjectViewProjectNode" />
               <item name="coronavirus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coronavirus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coronavirus" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,18 +450,18 @@
       <workItem from="1584913014724" duration="3821000" />
       <workItem from="1585036459829" duration="9942000" />
       <workItem from="1585068974611" duration="5638000" />
-      <workItem from="1585158781876" duration="25941000" />
+      <workItem from="1585158781876" duration="27233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31579000" />
+    <option name="totallyTimeSpent" value="32871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -604,9 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/GenericEvent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -680,16 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#34#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Admin/index.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -706,13 +835,6 @@
     <entry file="file://$PROJECT_DIR$/templates/register.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SicknessController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -727,10 +849,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="e#34#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+        <state relative-caret-position="225">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="n#div#1;n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#7718#7724#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

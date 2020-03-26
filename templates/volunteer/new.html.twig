@@ -3,14 +3,12 @@
 {% block title %}New Volunteer{% endblock %}
 
 {% block body %}
-    <h1>Create new Volunteer</h1>
-    <div class="container-fluid">
-        <a href="{{ path('Volunteer_All')}}" class="btn btn-outline-dark dataTableLink btn-lg">Back to list</a>
+    <div class="card">
+        <div class="header">
+            <h4 class="title">Create new Volunteer</h4>
+            <div class="content">
+                {{ include('Volunteer/_form.html.twig') }}
+            </div>
+        </div>
     </div>
-
-    <div class="container">
-        {{ include('Volunteer/_form.html.twig') }}
-    </div>
-
-    
 {% endblock %}

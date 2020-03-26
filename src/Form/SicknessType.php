@@ -15,15 +15,8 @@ class SicknessType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name')
-            ->add('informations', EntityType::class, [
-                'class' => Information::class,
-                'choice_label'=>'id',
-                'multiple' => false,
-                'expanded' => false
-            ])
+            ->add('name');
 
-        ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
