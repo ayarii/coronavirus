@@ -147,8 +147,14 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">
-                                        <span class="no-icon">Log out</span>
+                                        {% if app.user %}
+                                        <a href="{{ path('security_logout') }}" class="no-icon">Log out</a>
                                     </a>
+                                        {% else %}
+                                            <a href="{{ path('security_login') }}" class="no-icon">Log out</a>
+                                            </a>
+                                        {% endif %}
+
                                 </li>
                             </ul>
                         </div>

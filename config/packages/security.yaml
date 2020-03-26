@@ -1,34 +1,31 @@
-# config/packages/security.yaml
 security:
     encoders:
-        FOS\UserBundle\Model\UserInterface: bcrypt
+        App\Entity\User: bcrypt
 
-    role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: ROLE_ADMIN
-
-    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        fos_userbundle:
-            id: fos_user.user_provider.username_email
+        database_users:
+            entity: { class: App\Entity\User, property: username }
 
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
         main:
+
             pattern: ^/
+            anonymous: true
+
             form_login:
-                provider: fos_userbundle
+                check_path: security_login
+                login_path: security_login
                 csrf_token_generator: security.csrf.token_manager
+                default_target_path: sickness_index
 
-            logout:       true
-            anonymous:    true
+            logout:
+                path: security_logout
+                target: security_login
 
-    # Easy way to control access for large sections of your site
-    # Note: Only the *first* access control that matches will be used
     access_control:
-        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-     #   - { path: ^/admin/, role: ROLE_ADMIN }
+
+        - { path: '^/admin', roles: ROLE_ADMIN }
