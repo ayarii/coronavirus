@@ -21,11 +21,11 @@
                 {% for Volunteer in voluntaries %}
                     <tr>
                         <td></td>
-                        <td><img class="image" src="{{ asset('uploads/pictures/' ~ Volunteer.picture) }}"
+                        <td><img class="volunteer img-thumbnail" src="{{ asset('uploads/pictures/' ~ Volunteer.picture) }}"
                         alt="{{ Volunteer.lastName }}"></td>
                         <td>{{ Volunteer.firstName }}</td>
                         <td>{{ Volunteer.lastName }}</td>
-                        <td class="">
+                        <td class="text-right">
                             <a href="{{ path('Volunteer_show', {'id': Volunteer.id}) }}"
                                class="btn btn-outline-dark dataTableLink btn-sm">show</a>
                             <a href="{{ path('Volunteer_edit', {'id': Volunteer.id}) }}"

@@ -1,4 +1,5 @@
 {{ form_start(form) }}
     {{ form_row(form.name, { 'attr' : {'placeholder' : 'sickness name', 'class' : 'form-control'}}) }}
-    <button class="btn btn-outline-dark dataTableLink btn-sm">{{ button_label|default('Save') }}</button>
+<button class="btn btn-outline-dark dataTableLink btn-sm">{{ button_label|default('Save') }}</button>
+<a href="{{ path('sickness_index') }}" class="btn btn-outline-dark dataTableLink btn-sm">Back to list</a>
 {{ form_end(form) }}

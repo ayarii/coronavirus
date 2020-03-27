@@ -1,15 +1,40 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" type="image/png" href="{{ asset('assets/Back/img/favicon.png') }}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Login</title>
+        <!-- CSS Files -->
+        <link href="{{ asset('assets/Back/css/bootstrap.min.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('assets/Front/css/style.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('assets/Front/css/login.css') }}" rel="stylesheet"/>
 
-{% block body %}
+    </head>
+    <body class="body">
+    <h1 class="text-center ">Dashboard Admin</h1>
+    <div class="container" >
+        <div class="row justify-content-lg-center">
+            <div class="row">
+                <div class="card border-info">
+                    <div class="card-body">
+                        <div class="row">
+                                        {{ form_start(form) }}
+                                        {{ form_row(form.fullName) }}
+                                        {{ form_row(form.username) }}
+                                        {{ form_row(form.email) }}
+                                        {{ form_row(form.password.first) }}
+                                        {{ form_row(form.password.second) }}
+                                        <button type="submit" class="btn btn-outline-dark dataTableLink btn-lg">Create account</button>
+                                        {{ form_end(form) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-{{ form_start(form) }}
-    {{ form_row(form.fullName) }}
-    {{ form_row(form.username) }}
-    {{ form_row(form.email) }}
-    {{ form_row(form.password.first) }}
-    {{ form_row(form.password.second) }}
+    </body>
 
-    <button type="submit">S'inscrire !</button>
-{{ form_end(form) }}
+    </html>
 
-{% endblock %}
