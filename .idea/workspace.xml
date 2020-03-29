@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce0f3-2656-4914-846d-f233f2f8321c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/Back/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/Front/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/stof_doctrine_extensions.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/coronavirus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coronavirus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allergy/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allergy/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sickness/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sickness/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sickness/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sickness/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/specialty/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/specialty/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Allergy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Allergy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Information.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Information.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Sickness.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sickness.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Specialty.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Specialty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Volunteer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Volunteer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +145,9 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/omines/datatables-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZFURUokB580ux5I8iSBjBMhj9f" />
@@ -198,7 +203,8 @@
       <workItem from="1585036459829" duration="9942000" />
       <workItem from="1585068974611" duration="5638000" />
       <workItem from="1585158781876" duration="27233000" />
-      <workItem from="1585296534538" duration="10608000" />
+      <workItem from="1585296534538" duration="12857000" />
+      <workItem from="1585474992497" duration="11469000" />
     </task>
     <servers />
   </component>
