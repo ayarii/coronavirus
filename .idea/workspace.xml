@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92ce0f3-2656-4914-846d-f233f2f8321c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/stof_doctrine_extensions.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/coronavirus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coronavirus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Allergy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Allergy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Information.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Sickness.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sickness.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Specialty.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Specialty.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Volunteer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Volunteer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,6 +192,7 @@
       <workItem from="1585158781876" duration="27233000" />
       <workItem from="1585296534538" duration="12857000" />
       <workItem from="1585474992497" duration="11469000" />
+      <workItem from="1585666274436" duration="203000" />
     </task>
     <servers />
   </component>
