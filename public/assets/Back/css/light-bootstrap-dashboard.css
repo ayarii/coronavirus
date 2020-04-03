@@ -5830,6 +5830,7 @@ fieldset[disabled] .form-control {
 
 .card-stats .card-body .numbers p {
     margin-bottom: 0;
+    font-size: 10px;
 }
 
 .card-stats .card-footer {
