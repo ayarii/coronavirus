@@ -7,6 +7,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\InformationRepository")
+ * @ORM\Table(name="information")
  */
 class Information
 {
