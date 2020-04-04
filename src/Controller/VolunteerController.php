@@ -63,13 +63,13 @@ class VolunteerController extends AbstractController
                 ['country' => $name]
             );
             return $this->render('Volunteer/index.html.twig', [
-                'voluntaries' => $volunteers,
+                'volunteers' => $volunteers,
                 'country' => $name,
             ]);
         }
         else {
         return $this->render('Volunteer/index.html.twig', [
-            'voluntaries' => $VolunteerRepository->findAll(),
+            'volunteers' => $VolunteerRepository->findAll(),
             'country' => $name,
         ]);
         }

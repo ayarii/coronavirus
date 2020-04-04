@@ -10,7 +10,8 @@
     <div class="col-md-8">
         <div class="card bootstrap-table">
             <div class="header">
-                <h4 class="title ml-3">Volunter index</h4>
+                <h4 class="title ml-3">Volunteer index</h4>
+                <a href="{{path('Volunteer_index')}}" class="btn btn-outline-dark dataTableLink btn-sm find mr-3">Find All</a>
             </div>
             <div class="content">
                 <table id="bootstrap-table" class="table">
@@ -25,7 +26,7 @@
                     </thead>
                     <tbody>
                    
-                    {% for Volunteer in voluntaries %}
+                    {% for Volunteer in volunteers %}
                     
                             <tr>
                                 <td></td>

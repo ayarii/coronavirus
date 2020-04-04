@@ -27,9 +27,19 @@ class HomeController extends AbstractController
      */
     public function volunteers(Request $request, PaginatorInterface $paginator)
     {
-        $VolunteerRepository = $this->getDoctrine()->getRepository(Volunteer::class)->findAll();
+        $name = $request->query->get("country");
+        if ($name!="") {
+            $volunteers = $this->getDoctrine()->getRepository(Volunteer::class)->findBy(
+                ['country' => $name]
+            );
+            
+        }
+        else {
+        $volunteers = $this->getDoctrine()->getRepository(Volunteer::class)->findAll();
+        }
+        
         $entites = $paginator->paginate(
-            $VolunteerRepository, // Requête contenant les données à paginer (ici nos articles)
+            $volunteers, // Requête contenant les données à paginer (ici nos articles)
             $request->query->getInt('page', 1), // Numéro de la page en cours, passé dans l'URL, 1 si aucune page
             2 // Nombre de résultats par page
         );
