@@ -10,17 +10,27 @@
                 <thead>
                 <th data-field="state" data-checkbox="true"></th>
                 <th data-field="name" data-sortable="true">Cin</th>
-                <th data-field="name" data-sortable="true">Country</th>
+                <th data-field="name" data-sortable="true">Municipality</th>
+                <th data-field="name" data-sortable="true">Score</th>
                 <th data-field="actions" class="td-actions text-right" data-events="operateEvents"
                     data-formatter="operateFormatter">Actions
                 </th>
                 </thead>
                 <tbody>
-                {% for information in informations %}
-                    <tr>
+                {% for information in informations|sort %}
+                {% if information.score < 40 %}
+                    {% set class="success" %}
+               
+                {% elseif information.score < 70 %}
+                    {% set class="warning" %}
+                {% else %}
+                    {% set class="danger" %}
+                {% endif %}
+                    <tr class="{{ class }}">
                         <td></td>
                         <td>{{ information.cin }}</td>
                         <td>{{ information.country }}</td>
+                        <td>{{ information.score }} %</td>
                         <td class="text-right">
                             <a href="{{ path('information_show', {'id': information.id}) }}"
                                class="btn btn-outline-dark dataTableLink btn-sm">show</a>
