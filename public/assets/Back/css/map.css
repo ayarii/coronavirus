@@ -1,0 +1,21 @@
+.card .content .map{
+    width: 70%;
+    height: auto;
+}
+
+#mapTun a{
+    fill: #9368e9;
+    stroke: white;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+#mapTun a.isActive{
+    fill: #943bea;
+}
+
+.mapSelect {
+    color: inherit;
+    text-decoration: underline;
+    transition: color 0.3s;
+}

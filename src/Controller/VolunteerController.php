@@ -54,11 +54,26 @@ class VolunteerController extends AbstractController
     /**
      * @Route("/list", name="Volunteer_index", methods={"GET"})
      */
-    public function index(VolunteerRepository $VolunteerRepository): Response
+    public function index(Request $request,VolunteerRepository $VolunteerRepository): Response
     {
+        
+        $name = $request->query->get("country");
+        if ($name!="") {
+            $volunteers = $VolunteerRepository->findBy(
+                ['country' => $name]
+            );
+            return $this->render('Volunteer/index.html.twig', [
+                'voluntaries' => $volunteers,
+                'country' => $name,
+            ]);
+        }
+        else {
         return $this->render('Volunteer/index.html.twig', [
             'voluntaries' => $VolunteerRepository->findAll(),
+            'country' => $name,
         ]);
+        }
+        
     }
 
     /**
