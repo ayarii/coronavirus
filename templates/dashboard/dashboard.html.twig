@@ -3,7 +3,8 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block body %}
-
+<style>
+</style>
     <h2>National Informations</h2>
     {% for entities in results %}
         {% for r in  entities %}
@@ -167,7 +168,7 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="icon-big text-center icon-warning">
-                                <i class="nc-icon nc-ambulance"></i>
+                                <i class="fa fa-user"></i>
                             </div>
                         </div>
                         <div class="col-7">
@@ -218,10 +219,10 @@
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['Date', 'Number of Test '],
-                    ['2004', 0],
-                    ['2005', 1170],
-                    ['2006', 660],
-                    ['2007', 1030]
+                    ['01/04/2020', 50],
+                    ['02/04/2020', 30],
+                    ['03/04/2020', 20],
+                    ['04/04/2020', 100],
                 ]);
 
                 var options = {

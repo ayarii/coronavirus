@@ -92,7 +92,10 @@ class Information
      * @ORM\Column(type="datetime")
      */
     private $date;
-
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $score;
     /**
      * @Gedmo\Timestampable(on="create")
      * @ORM\Column(name="created", type="datetime")
@@ -104,6 +107,11 @@ class Information
      * @Gedmo\Timestampable(on="update")
      */
     private $updated;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $country;
 
     public function getId(): ?int
     {
@@ -364,6 +372,38 @@ class Information
     public function setUpdated($updated): void
     {
         $this->updated = $updated;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * @param mixed $country
+     */
+    public function setCountry($country): void
+    {
+        $this->country = $country;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
+     * @param mixed $score
+     */
+    public function setScore($score): void
+    {
+        $this->score = $score;
     }
 
 }

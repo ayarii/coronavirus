@@ -3,39 +3,40 @@
 {% block title %}Information index{% endblock %}
 
 {% block body %}
-    <h1>Information index</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th>Age</th>
-                <th>Cin</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for information in information %}
-            <tr>
-                <td>{{ information.id }}</td>
-                <td>{{ information.firstName }}</td>
-                <td>{{ information.lastName }}</td>
-                <td>{{ information.age }}</td>
-                <td>{{ information.cin }}</td>
-                <td>
-                    <a href="{{ path('information_show', {'id': information.id}) }}">show</a>
-                    <a href="{{ path('information_edit', {'id': information.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="6">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('information_new') }}">Create new</a>
+    <div class="card bootstrap-table">
+        <div class="header">
+            <h4 class="title">Information index</h4>
+            <table id="bootstrap-table" class="table">
+                <thead>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="name" data-sortable="true">Cin</th>
+                <th data-field="name" data-sortable="true">Country</th>
+                <th data-field="actions" class="td-actions text-right" data-events="operateEvents"
+                    data-formatter="operateFormatter">Actions
+                </th>
+                </thead>
+                <tbody>
+                {% for information in informations %}
+                    <tr>
+                        <td></td>
+                        <td>{{ information.cin }}</td>
+                        <td>{{ information.country }}</td>
+                        <td class="text-right">
+                            <a href="{{ path('information_show', {'id': information.id}) }}"
+                               class="btn btn-outline-dark dataTableLink btn-sm">show</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="4">no records found</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div class="footer container-fluid">
+                {#<a href="{{ path('information_new') }}" class="btn btn-outline-dark dataTableLink btn-sm">Create new
+                    specialty</a>#}
+            </div>
+        </div>
+    </div>
 {% endblock %}

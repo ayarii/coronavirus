@@ -21,7 +21,7 @@ class InformationController extends AbstractController
     public function index(InformationRepository $informationRepository): Response
     {
         return $this->render('information/index.html.twig', [
-            'information' => $informationRepository->findAll(),
+            'informations' => $informationRepository->findAll(),
         ]);
     }
 
@@ -53,8 +53,11 @@ class InformationController extends AbstractController
      */
     public function show(Information $information): Response
     {
+         $country= $information->getCountry();
+        $volunteers = $this->getDoctrine()->getRepository('App:Volunteer')->findByCountry($country);
         return $this->render('information/show.html.twig', [
             'information' => $information,
+            'volunteers'=>$volunteers
         ]);
     }
 
