@@ -3,103 +3,105 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block body %}
-    <div class="content">
-        {% for entities in results %}
-            {% for r in  entities %}
-                {% if r.Country_Region== "Tunisia" %}
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-body ">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center icon-warning">
-                                                <i class="fa fa-users"></i>
-                                            </div>
+
+    <h2>National Informations</h2>
+    {% for entities in results %}
+        {% for r in  entities %}
+            {% if r.Country_Region== "Tunisia" %}
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-body ">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="icon-big text-center icon-warning">
+                                            <i class="fa fa-users"></i>
                                         </div>
-                                        <div class="col-7">
-                                            <div class="numbers">
-                                                <p class="card-category">Confirmed</p>
-                                                <h4 class="card-title"> {{ r.Confirmed }}</h4>
-                                            </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="numbers">
+                                            <p class="card-category">Confirmed</p>
+                                            <h4 class="card-title"> {{ r.Confirmed }}</h4>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-body ">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big  icon-warning">
-                                                <i class="fa fa-bed"></i>
-                                            </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-body ">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="icon-big  icon-warning">
+                                            <i class="fa fa-bed"></i>
                                         </div>
-                                        <div class="col-7">
-                                            <div class="numbers">
-                                                <p class="card-category">Deaths</p>
-                                                <h4 class="card-title">{{ r.Deaths }}</h4>
-                                            </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="numbers">
+                                            <p class="card-category">Deaths</p>
+                                            <h4 class="card-title">{{ r.Deaths }}</h4>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-body ">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center icon-warning">
-                                                <i class="fa fa-angellist"></i>
-                                            </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-body ">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="icon-big text-center icon-warning">
+                                            <i class="fa fa-angellist"></i>
                                         </div>
-                                        <div class="col-7">
-                                            <div class="numbers">
-                                                <p class="card-category">Recovered</p>
-                                                <h4 class="card-title">{{ r.Recovered }}</h4>
-                                            </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="numbers">
+                                            <p class="card-category">Recovered</p>
+                                            <h4 class="card-title">{{ r.Recovered }}</h4>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-body ">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center icon-warning">
-                                                <i class="fa fa-refresh"></i>
-                                            </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-body ">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="icon-big text-center icon-warning">
+                                            <i class="fa fa-refresh"></i>
                                         </div>
-                                        <div class="col-7">
-                                            <div class="numbers">
-                                                <p class="card-category">Active</p>
-                                                <h4 class="card-title">{{ r.Active }}</h4>
-                                            </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="numbers">
+                                            <p class="card-category">Active</p>
+                                            <h4 class="card-title">{{ r.Active }}</h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {#Country_Region:{{ r.Country_Region }}
-                    {{ r.Confirmed }}
-                    Confirmed:{{ r.Confirmed }}/
-                    Deaths:{{ r.Deaths }}/
-                    Recovered:{{ r.Recovered }}/
-                    Lat: {{ r.Lat }}/
-                    Lat: {{ r.Long_ }}/
-                    Active: {{ r.Active }}/#}
-                {% endif %}
-            {% endfor %}
+                </div>
+                {#Country_Region:{{ r.Country_Region }}
+                {{ r.Confirmed }}
+                Confirmed:{{ r.Confirmed }}/
+                Deaths:{{ r.Deaths }}/
+                Recovered:{{ r.Recovered }}/
+                Lat: {{ r.Lat }}/
+                Lat: {{ r.Long_ }}/
+                Active: {{ r.Active }}/#}
+            {% endif %}
         {% endfor %}
-        <div class="row">
+    {% endfor %}
+    <h2>Local Informations</h2>
+    <div class="row">
         <div class="col-lg-3 col-sm-6">
             <div class="card card-stats">
                 <div class="card-body ">
@@ -160,26 +162,296 @@
             </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-body ">
-                        <div class="row">
-                            <div class="col-5">
-                                <div class="icon-big text-center icon-warning">
-                                    <i class="nc-icon nc-ambulance"></i>
-                                </div>
+            <div class="card card-stats">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="icon-big text-center icon-warning">
+                                <i class="nc-icon nc-ambulance"></i>
                             </div>
-                            <div class="col-7">
-                                <div class="numbers">
-                                    <p class="card-category">Urgent</p>
-                                    <h4 class="card-title">50</h4>
-                                </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="numbers">
+                                <p class="card-category">Not Urgent</p>
+                                <h4 class="card-title">50</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-6">
+            <div class="card bootstrap-table">
+                <div class="card-body table-full-width">
+                    <div class="toolbar">
+                        <!--        Here you can write extra buttons/actions for the toolbar              -->
+                    </div>
+                    <table id="bootstrap-table" class="table">
+                        <thead>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <th data-field="id" class="text-center">ID</th>
+                        <th data-field="name" data-sortable="true">Cin</th>
+                        <th data-field="salary" data-sortable="true">Phone</th>
+                        <th data-field="country" data-sortable="true">City</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36,738</td>
+                            <td>Niger</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card bootstrap-table">
+                <div class="card-body table-full-width">
+                    <div class="toolbar">
+                        <!--        Here you can write extra buttons/actions for the toolbar              -->
+                    </div>
+                    <table id="bootstrap-table1" class="table">
+                        <thead>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <th data-field="id" class="text-center">ID</th>
+                        <th data-field="name" data-sortable="true">Cin</th>
+                        <th data-field="salary" data-sortable="true">Phone</th>
+                        <th data-field="country" data-sortable="true">City</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36,738</td>
+                            <td>Niger</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>2</td>
+                            <td>Minerva Hooper</td>
+                            <td>$23,789</td>
+                            <td>Curaçao</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div id="piechart"></div>
+        </div>
+        <div class="col-lg-6">
+            <div id="curve_chart"></div>
+        </div>
     </div>
 {% endblock %}
-{% block javascripts %}
+    {% block javascripts %}
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages': ['corechart']});
+            google.charts.setOnLoadCallback(drawChart1);
 
-{% endblock %}
+            function drawChart1() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Test by gender'],
+                    ['Test by Men',     {{ testByMen|length }}],
+                    ['Test By Women',      {{ testByWomen|length }}],
+                ]);
+
+                var options = {
+                    title: 'Test by gender'
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                chart.draw(data, options);
+            }
+
+            google.charts.load('current', {'packages': ['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Date', 'Number of Test '],
+                    ['2004', 0],
+                    ['2005', 1170],
+                    ['2006', 660],
+                    ['2007', 1030]
+                ]);
+
+                var options = {
+                    title: 'Number of Test',
+                    curveType: 'function',
+                    legend: {position: 'bottom'}
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+                chart.draw(data, options);
+            }
+        </script>
+    {% endblock %}

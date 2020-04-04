@@ -47,4 +47,16 @@ class InformationRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function testByDay()
+    {
+        $qb = $this->createQueryBuilder('o');
+
+     //   $qb->select('SUM() AS montantTotal')
+            $qb->select('SUM(o)')
+            ->groupBy('o.created')
+            ->orderBy('o.created', 'ASC');
+             return $qb->getQuery()->getArrayResult();
+    }
+
 }
