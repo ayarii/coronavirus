@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
      */
     public function dashboard()
     {
-        $volunteers = $this->getDoctrine()->getRepository('App:Volunteer');
+        $volunteers = $this->getDoctrine()->getRepository('App:Volunteer')->findAll();
         $testByMen = $this->getDoctrine()->getRepository("App:Information")->findByGender("men");
         $testByWomen = $this->getDoctrine()->getRepository("App:Information")->findByGender("women");
         $tests= $this->getDoctrine()->getRepository("App:Information")->testByDay();
