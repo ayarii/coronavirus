@@ -20,7 +20,7 @@ security:
                 check_path: security_login
                 login_path: security_login
                 csrf_token_generator: security.csrf.token_manager
-                default_target_path: sickness_index
+                default_target_path: dashboard
 
             logout:
                 path: security_logout
@@ -28,4 +28,6 @@ security:
 
     access_control:
 
-        - { path: '^/admin', roles: ROLE_ADMIN }
+        #- { path: '^/admin', roles: ROLE_ADMIN }
+        - { path: '^/admin', roles: ROLE_SUPER_ADMIN }
+        - { path: '^/hospital', roles: ROLE_HOSPITAL }

@@ -9,13 +9,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Hospital
 {
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
     private $id;
-
     /**
      * @ORM\Column(type="string", length=255)
      */
@@ -31,7 +31,15 @@ class Hospital
      */
     private $adress;
 
-    public function getId(): ?int
+    /**
+     * @ORM\OneToOne(targetEntity=User::class,cascade={"persist", "remove"})
+     */
+    protected $user;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
     {
         return $this->id;
     }
@@ -71,4 +79,21 @@ class Hospital
 
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user): void
+    {
+        $this->user = $user;
+    }
+
 }

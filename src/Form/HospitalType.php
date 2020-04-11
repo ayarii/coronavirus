@@ -12,6 +12,7 @@ class HospitalType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('user',UserType::class)
             ->add('name')
             ->add('capacity')
             ->add('adress')

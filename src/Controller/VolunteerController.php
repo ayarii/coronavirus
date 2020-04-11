@@ -14,7 +14,7 @@ use Omines\DataTablesBundle\DataTableFactory;
 use Omines\DataTablesBundle\Adapter\Doctrine\ORMAdapter;
 
 /**
- * @Route("/admin/volunteer")
+ * @Route("/hospital/volunteer")
  */
 class VolunteerController extends AbstractController
 {

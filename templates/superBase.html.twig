@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/Back/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/Back/img/favicon.png') }}">
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+    <!-- CSS Files -->
+    <link href="{{ asset('assets/Back/css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/Back/css/light-bootstrap-dashboard.css') }}" rel="stylesheet"/>
+    <!-- Datatable -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/v/dt/jq-3.2.1/dt-1.10.16/datatables.min.css"/>
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{{ asset('assets/Back/css/demo.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/Back/css/style.css') }}" rel="stylesheet"/>
+
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-image="{{ asset('assets/Front/images/resource/news-10.jpg') }}" data-color="purple">
+
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="{{ path('dashboard') }}" class="simple-text">
+                    CODIV-TN
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-hospital-o"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('hospital_index') }}">
+                        <i class="fa fa-hospital-o"></i>
+                        <p>Hopitaux</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-end" id="navigation">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <i class="nc-icon nc-ambulance"></i>
+                                <span class="notification">5</span>
+                                <span class="d-lg-none">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Notification 1</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                {% if app.user %}
+                                <a href="{{ path('security_logout') }}" class="no-icon">Log out</a>
+                                </a>
+                                {% endif %}
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="section">
+                    {% block body %}
+
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav>
+
+                    <p class="copyright text-center">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        made in Tunisia with love <i class="fa fa-heart"></i>
+                    </p>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!--   Core JS Files   -->
+<script src="{{ asset('assets/Back/js/core/jquery.3.2.1.min.js') }}" type="text/javascript"></script>
+<!-- Datatable -->
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.2.1/dt-1.10.16/datatables.min.js"></script>
+
+<script src="{{ asset('assets/Back/js/core/popper.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/Back/js/core/bootstrap.min.js') }}" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="{{ asset('assets/Back/js/plugins/bootstrap-switch.js') }}"></script>
+<!--  Chartist Plugin  -->
+<script src="{{ asset('assets/Back/js/plugins/chartist.min.js') }}"></script>
+<!--  Notifications Plugin    -->
+<script src="{{ asset('assets/Back/js/plugins/bootstrap-notify.js') }}"></script>
+<!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
+<script src="{{ asset('assets/Back/js/light-bootstrap-dashboard.js') }} " type="text/javascript"></script>
+<!--  Bootstrap Table Plugin -->
+<script src="{{ asset('assets/Back/js/plugins/bootstrap-table.js') }}"></script>
+<!--  DataTable Plugin -->
+<script src="{{ asset('assets/Back/js/plugins/jquery.dataTables.min.js') }}"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="{{ asset('assets/Back/js/demo.js') }}"></script>
+<script type="text/javascript">
+    var $table = $('#bootstrap-table');
+
+    function operateFormatter(value, row, index) {
+        return [
+            '<a rel="tooltip" title="View" class="btn btn-outline-dark dataTableLink btn-sm" href="">',
+            'show',
+            '</a>',
+            '<a rel="tooltip" title="Edit" class="btn btn-outline-dark dataTableLink btn-sm" href="">',
+edit,
+            '</a>',
+            '<a rel="tooltip" title="Remove" class="btn btn-outline-dark dataTableLink btn-sm" href="">',
+remove,
+            '</a>'
+        ].join('');
+    }
+
+    $().ready(function() {
+        window.operateEvents = {
+            'click .view': function(e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click view icon, row: ', info);
+                console.log(info);
+            },
+            'click .edit': function(e, value, row, index) {
+                info = JSON.stringify(row);
+
+                swal('You click edit icon, row: ', info);
+                console.log(info);
+            },
+            'click .remove': function(e, value, row, index) {
+                console.log(row);
+                $table.bootstrapTable('remove', {
+                    field: 'id',
+                    values: [row.id]
+                });
+            }
+        };
+
+        $table.bootstrapTable({
+            toolbar: ".toolbar",
+            clickToSelect: true,
+            showRefresh: true,
+            search: true,
+            showToggle: true,
+            showColumns: true,
+            pagination: true,
+            searchAlign: 'left',
+            pageSize: 8,
+            clickToSelect: false,
+            pageList: [8, 10, 25, 50, 100],
+
+            formatShowingRows: function(pageFrom, pageTo, totalRows) {
+                //do nothing here, we don't want to show the text "showing x of y from..."
+            },
+            formatRecordsPerPage: function(pageNumber) {
+                return pageNumber + " rows visible";
+            },
+            icons: {
+                refresh: 'fa fa-refresh',
+                toggle: 'fa fa-th-list',
+                columns: 'fa fa-columns',
+                detailOpen: 'fa fa-plus-circle',
+                detailClose: 'fa fa-minus-circle'
+            }
+        });
+
+        //activate the tooltips after the data table is initialized
+        $('[rel="tooltip"]').tooltip();
+
+        $(window).resize(function() {
+            $table.bootstrapTable('resetView');
+        });
+
+    });
+</script>
+
+{% block javascripts %}{% endblock %}
+</body>
+
+</html>

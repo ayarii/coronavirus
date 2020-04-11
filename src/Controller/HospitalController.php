@@ -3,15 +3,17 @@
 namespace App\Controller;
 
 use App\Entity\Hospital;
+use App\Entity\User;
 use App\Form\HospitalType;
 use App\Repository\HospitalRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 /**
- * @Route("/hospital")
+ * @Route("/admin/hospital")
  */
 class HospitalController extends AbstractController
 {
@@ -28,17 +30,19 @@ class HospitalController extends AbstractController
     /**
      * @Route("/new", name="hospital_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(UserPasswordEncoderInterface $passwordEncoder,Request $request): Response
     {
         $hospital = new Hospital();
         $form = $this->createForm(HospitalType::class, $hospital);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($hospital);
+            $user= $hospital->getUser();
+            $password = $passwordEncoder->encodePassword($user, $user->getPassword());
+            $user->setPassword($password);
+            $user->setRoles(['ROLE_HOSPITAL']);
             $entityManager->flush();
-
             return $this->redirectToRoute('hospital_index');
         }
 
