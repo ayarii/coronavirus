@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21cc384d-7ec0-489d-b5d5-7ad434272749" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/coronavirus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coronavirus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HospitalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HospitalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/InformationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InformationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SicknessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SicknessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SpecialtyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SpecialtyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VolunteerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VolunteerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Hospital.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Hospital.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/HospitalType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/HospitalType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hospital/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hospital/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hospital/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hospital/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hospital/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hospital/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hospital/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hospital/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/fos_user.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/layout.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +132,6 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
-      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/omines/datatables-bundle" />
@@ -190,7 +181,9 @@
       <workItem from="1586375438380" duration="5123000" />
       <workItem from="1586507033185" duration="1176000" />
       <workItem from="1586525260878" duration="1951000" />
-      <workItem from="1586601560837" duration="11381000" />
+      <workItem from="1586601560837" duration="11980000" />
+      <workItem from="1586688581352" duration="882000" />
+      <workItem from="1586722044556" duration="3967000" />
     </task>
     <servers />
   </component>
