@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
+ *  @ApiResource()
  * @ORM\Entity(repositoryClass="App\Repository\AllergyRepository")
  * @ORM\Table(name="allergy")
  */

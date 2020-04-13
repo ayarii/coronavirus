@@ -29,7 +29,8 @@
         "symfony/validator": "4.4.*",
         "symfony/web-link": "4.4.*",
         "symfony/web-server-bundle": "4.4.*",
-        "symfony/yaml": "4.4.*"
+        "symfony/yaml": "4.4.*",
+        "webonyx/graphql-php": "^0.13.8"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
